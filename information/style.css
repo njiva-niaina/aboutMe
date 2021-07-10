@@ -12,9 +12,6 @@ body{
     align-items: center;
     min-height: 100vh;
     background: #ecf0f3;
-    background-image: url("images/bg2.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;  
 }
 
 .container{
