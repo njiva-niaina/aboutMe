@@ -9,8 +9,12 @@
     <title>AboutMe | Home</title>
 </head>
 
-<body>
-
+<body class="light">
+    <div class="nav">
+        <div class="mode-toggle">
+            <input type="checkbox" class="mode">
+        </div>
+    </div>
     <div class="wrapper">
         <div class="img-area">
             <div class="inner-area">
@@ -70,6 +74,27 @@
             <a href="skill/index.html">Skills</a>
         </div>
     </div>
+
+    <script>
+        const mode = document.querySelector('.mode');
+        let body = {
+            'el': document.querySelector('body'),
+            'dark': false
+        }
+        mode.addEventListener('click', ()=>{
+            if (body.dark === false){
+                body.dark = true;
+                body.el.className = 'dark';
+                body.textContent = 'light';
+            }
+            else{
+                body.dark = false;
+                body.el.className = 'light';
+                body.textContent = 'dark';
+            }
+        })
+    </script>
+
 </body>
 
 </html>

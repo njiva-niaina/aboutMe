@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <title>AboutMe | More</title>
 </head>
-<body>
-    
+<body class="light">
     <div class="container">
         <div class="nav">
             <div class="icon">
                 <a href="../index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="25px" height="25px">
-                        <g id="surface4433654">
-                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(19.215687%,20.392157%,29.411766%);fill-opacity:1;" d="M 24.964844 1.054688 C 24.753906 1.0625 24.550781 1.136719 24.386719 1.265625 L 1.386719 19.210938 C 0.949219 19.550781 0.871094 20.179688 1.210938 20.617188 C 1.550781 21.050781 2.179688 21.128906 2.617188 20.789062 L 4 19.710938 L 4 46 C 4 46.550781 4.449219 47 5 47 L 18.832031 47 C 18.941406 47.019531 19.050781 47.019531 19.160156 47 L 30.832031 47 C 30.941406 47.019531 31.050781 47.019531 31.160156 47 L 45 47 C 45.550781 47 46 46.550781 46 46 L 46 19.710938 L 47.386719 20.789062 C 47.667969 21.007812 48.042969 21.0625 48.375 20.925781 C 48.707031 20.792969 48.941406 20.492188 48.992188 20.136719 C 49.039062 19.785156 48.898438 19.429688 48.613281 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.585938 L 25.613281 1.265625 C 25.429688 1.121094 25.199219 1.046875 24.960938 1.054688 Z M 25 3.320312 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 Z M 37 8 L 39 8 L 39 11.707031 L 37 10.144531 Z M 20 28 L 30 28 L 30 45 L 20 45 Z M 20 28 "/>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="25px" height="25px">
+                        <g id="surface5413189">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(47.843137%,48.235294%,53.333336%);fill-opacity:1;" d="M 49.925781 2.109375 C 49.507812 2.125 49.101562 2.269531 48.769531 2.527344 L 2.769531 38.421875 C 1.898438 39.101562 1.742188 40.359375 2.421875 41.230469 C 3.101562 42.101562 4.359375 42.257812 5.230469 41.578125 L 8 39.417969 L 8 92 C 8 93.105469 8.894531 94 10 94 L 37.664062 94 C 37.878906 94.035156 38.101562 94.035156 38.316406 94 L 61.664062 94 C 61.878906 94.035156 62.101562 94.035156 62.316406 94 L 90 94 C 91.105469 94 92 93.105469 92 92 L 92 39.417969 L 94.769531 41.578125 C 95.332031 42.019531 96.089844 42.125 96.75 41.855469 C 97.414062 41.585938 97.882812 40.984375 97.980469 40.277344 C 98.082031 39.570312 97.792969 38.863281 97.230469 38.421875 L 82 26.539062 L 82 12 L 70 12 L 70 17.171875 L 51.230469 2.527344 C 50.859375 2.238281 50.394531 2.089844 49.925781 2.109375 Z M 50 6.644531 L 88 36.296875 L 88 90 L 64 90 L 64 52 L 36 52 L 36 90 L 12 90 L 12 36.296875 Z M 74 16 L 78 16 L 78 23.417969 L 74 20.292969 Z M 40 56 L 60 56 L 60 90 L 40 90 Z M 40 56 "/>
                         </g>
-                    </svg>
+                        </svg>
+                        
                 </a>
             </div>    
+        
+            <div class="mode-toggle">
+                <input type="checkbox" class="mode">
+            </div>
+
         </div>
         <div class="card">
             <div class="img-box">
-                <img src="icons/checked-identification-documents-100.png" alt="" srcset="">
+                <img src="icons/identification-documents-100.png" alt="" srcset="">
             </div>
             <div class="content-box">
                 <div class="title">Personal Information</div>
@@ -137,5 +142,25 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const mode = document.querySelector('.mode');
+        let body = {
+            'el': document.querySelector('body'),
+            'dark': false
+        }
+        mode.addEventListener('click', ()=>{
+            if (body.dark === false){
+                body.dark = true;
+                body.el.className = 'dark';
+                body.textContent = 'light';
+            }
+            else{
+                body.dark = false;
+                body.el.className = 'light';
+                body.textContent = 'dark';
+            }
+        })
+    </script>
 </body>
 </html>
