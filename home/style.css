@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ecf0f3;   
+    background-image: url("images/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.wrapper, 
+.wrapper .img-area,
+.social-icons a,
+.buttons a{
+    background: #ecf0f3;    
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.wrapper{
+    padding: 30px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper .img-area{
+    height: 185px;
+    width: 185px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-area .inner-area{
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+}
+
+.inner-area img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wrapper .name{
+    font-size: 23px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+
+.wrapper .about{
+    font-weight: 400;
+    color: #7a7b88;
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+
+.wrapper .social-icons{
+    margin: 15px 0 25px 0;
+}
+
+.social-icons a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.social-icons a:hover::before,
+.buttons a:hover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ecf0f3;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+
+.buttons a:hover::before{
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.social-icons a svg{
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.wrapper .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #31344b;
+    position: relative;
+    z-index: 4;
+}
+
+.buttons a:first-child{
+    margin-right: 10px;
+}
+
+.buttons a:last-child{
+    margin-left: 10px;
+}

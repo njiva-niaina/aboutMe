@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e4ecf3;
+    background-image: url("images/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    width: 345px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.container .card .img-box{
+    position: relative;
+    text-align: center;
+}
+
+.container .card .content-box{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .card .content-box .title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+    letter-spacing: 2px;
+}
+
+.content-box .info{
+    font-size: 16px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #44476a;
+}
+
+.content-box .info .line{
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    /* background:red; */
+}
+
+.content-box .info .line .field,
+.content-box .info .line .value{
+    /* background:green; */
+    width: 40%;
+    text-align: left;
+}
+
+.content-box .info .line .value{
+    /* background:pink; */
+    width: 60%;
+}
+
+body .nav{
+    margin-top:10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+body .nav .icon{
+    margin-left: 20px;
+    text-align: center;
+    padding: 12px 0;
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+    position: relative;
+    cursor: pointer;
+    background: #ecf0f3;    
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+body .icon:hover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ecf0f3;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.therm{
+    margin-top: 2px;
+    width: 100%;
+    height:15px;
+    border-radius:5px;
+}
+.outer-therm{
+    background-color:#eeeff2;
+    box-shadow:inset -2px -2px 6px rgb(255, 255, 255),
+    inset 2px 2px 6px rgba(121, 130, 160, 0.747);
+    border-radius: 50px;
+    bottom: 0;
+}
+
+.inner-therm
+{
+    /* width: 50%; */
+    background-color:#1656f0;
+    border-radius: 50px;
+}

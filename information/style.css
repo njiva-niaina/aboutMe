@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+    background-image: url("images/bg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    width: 345px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.container .card .img-box{
+    position: relative;
+    text-align: center;
+}
+
+.container .card .content-box{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .card .content-box .title{
+    font-size: 22px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+    letter-spacing: 2px;
+}
+
+.content-box .info{
+    font-size: 16px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #44476a;
+}
+
+.content-box .info .line{
+    text-align: left;
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.content-box .info .subline{
+    font-size: 14px;
+}
+
+.content-box .info .details{
+    margin-bottom:5px;
+}
+
+.content-box .info .line .field{
+    width: 115px;
+}
+
+.content-box .info .line .field li{
+    text-align: center;
+}
+
+
+.content-box .info .line .separator{
+    width: 10px;
+}
+
+.content-box .info .line .value{
+    margin-left: 10px;
+    width: 170px;
+    color: #31344b;
+}
+
+.content-box .info{
+    color: #31344b;
+}
+
+body .nav{
+    margin-top:10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+body .nav .icon{
+    margin-left: 20px;
+    text-align: center;
+    padding: 12px 0;
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+    position: relative;
+    cursor: pointer;
+    background: #ecf0f3;    
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+body .icon:hover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ecf0f3;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+    border-radius: 5px;
+    z-index: -1;
+}
