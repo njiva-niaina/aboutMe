@@ -201,8 +201,8 @@ body .mode-toggle{
 body input[type="checkbox"]{
     position: absolute;
     -webkit-appearance: none;
-    height:40px;
-    width:100px;
+    height:20px;
+    width:50px;
     outline: none;
     cursor: pointer;
 }
@@ -233,10 +233,12 @@ body input[type="checkbox"]:after{
 }
 
 body input[type="checkbox"]:before{
-    height:20px;
-    width: 20px;
+    height:10px;
+    width: 10px;
     border-radius: 50%;
-    left: 15px;
+    left: 5px;
+    top: 1px;
+    bottom: 1px;
 }
 
 body.light input[type="checkbox"]:before{
@@ -254,11 +256,11 @@ body input[type="checkbox"]:after{
     width: 8px;
     background-color: #7a7a7a;
     border-radius: 50%;
-    right: -50px;
+    right: -20px;
 }
 
 body input[type="checkbox"]:checked:before{
-    left: 55px;
+    left: 25px;
 }
 
 body input[type="checkbox"]:checked:after{
