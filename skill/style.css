@@ -187,7 +187,7 @@ body.dark .outer-therm{
 .inner-therm
 {
     /* width: 50%; */
-    background-color:#1656f0;
+    background:linear-gradient(#396afc,#2948ff);
     border-radius: 50px;
 }
 
